@@ -1,0 +1,149 @@
+/* General Estilos */
+body {
+    margin: 0; /* Elimina los márgenes */
+    font-family: Arial; /* Tamaño de fuente */
+	font-size: 20px; /* Tamaño de fuente */
+    background-color: #f4f4f4; /* Color de fondo */
+    max-width: 1280px; /* Limita el ancho */
+    margin: auto; /* Ajusta auto el body */
+}
+
+header {
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color de texto */
+    padding: 10px 0; /* Aplica el espacio interior entre el contenido */
+    text-align: center; /* Centra horizontalmente todo el texto dentro del encabezado */
+}
+
+h1 {
+    font-size: 40px; /* Tamaño de fuente */
+    margin: 0; /* Elimina los márgenes */
+}
+
+nav ul {
+    list-style: none; /* Elimina el estilo predeterminado */
+    padding: 0; /* Elimina el relleno interno */
+}
+
+nav ul li {
+    display: inline; /* En lugar de que cada elemento de la lista aparezca en una nueva línea, los elementos se muestran uno al lado del otro, como si fueran parte de una línea de texto */
+    margin-right: 25px; /* Añade un margen a la derecha */
+}
+
+nav ul li a {
+    color: #fff; /* Color de texto */
+    text-decoration: none; /* Elimina el subrayado */
+    font-weight: bold; /* El texto se ve en negrita */
+}
+
+nav ul li a:hover, nav ul li a.active {  /* Aplica estilos a los enlaces ( <a>) dent<li>)<nav>)cuando el ratón está sobre ellos (hover) */
+    color: orange; /* Color de texto */
+}
+
+/* Section Styling */
+.intro {
+    background-color: lightblue; /* Color de fondo */
+    padding: 20px; /* Agrega un relleno */
+    margin: 20px 0; /* Establece un margen */
+}
+
+.intro p .highlight {
+    color: orange; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+}
+
+.highlight {
+    color: orange; /* Color de texto */
+    font-weight: bold; /* Texto en negrita */
+	font-family: verdana; /* Tipografia */
+}    
+
+.content {
+    padding: 20px; /* Agrega un relleno */
+}
+
+/* Estilos Tabla */
+table {
+    width: 100%;  /* Acho del 100% */
+    border-collapse: collapse;  /*Colabsar los bordes */
+    margin: 20px 0;  /* Aplica un margen */
+}
+
+table, th, td {
+    border: 1px solid black ;  /* Define el ancho con color negro */
+}
+
+th, td {
+    padding: 10px; /* Agrega un relleno */
+    text-align: left; /* Texto hacia la izquirda */
+}
+
+th {
+    background-color: coral; /* Color de fondo */
+    color: white; /* Color de texto */
+}
+
+/* Listas */
+.styled-list { 
+    list-style-type: square; /* Tipo de viñeta */
+    padding-left: 20px; /* Aplica un relleno */
+}
+
+.styled-list li { 
+    margin-bottom: 10px; /* Estable un margen inferior */
+}
+
+/* Form Estilos */
+.form-section {
+    background-color: #fff3e0; /* Color de fondo */
+    padding: 20px; /* Agrega un relleno */
+    margin: 20px 0; /* Aplica un margen */
+}
+
+form {
+	width: 100%; /* Aplica un margen */
+}
+
+label {
+    font-weight: bold; /* Aplica un margen */
+}
+
+input[type="text"], /* Campo de entrada a formulario en est ecaso texto */
+input[type="email"], /* Campo de entrada a formulario en est ecaso email */
+input[type="tel"], /* Campo de entrada a formulario en est ecaso teléfono */
+textarea,
+select {
+    width: 100%; /* Acho del 100% */
+    padding: 10px; /* Agrega un relleno */
+    border: 1px solid white; /* Grosor borde blanco */
+    border-radius: 5px; /* Redondea las esquinas */
+}
+
+input[type="submit"] {
+    background-color: orange; /* Color de fondo */
+    color: white; /* Color de texto */
+    border: none; /* Sin bordes */
+    padding: 10px; /* Agrega un relleno */
+    cursor: pointer; /* Cambia el cursor del mouse a una mano cuando el usuario pasa el puntero */
+    border-radius: 5px; /* Redondea las esquinas */
+}
+
+input[type="submit"]:hover {
+    background-color: #orange; /* Color de fondo */
+}
+
+/* Footer Estilo */
+footer {
+    background-color: #333; /* Color de fondo */
+    color: white; /* Color de texto */
+    text-align: center; /* Texto hacia la izquirda */
+    padding: 10px 0; /* Agrega un relleno */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Imagen Estilo */
+img {
+    display: block; /* El elemento se comporte como un bloque */
+    margin: 30px auto; /* margen superior e inferior de 30 y automatico a los lados */
+    max-width:30%; /* Limita el ancho máximo del elemento al 30 */
+}
