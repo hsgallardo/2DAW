@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Formulario de Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="page2.html" class="active">Formulario</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="form-section">
+        <h2>Déjanos tus datos</h2>
+        <form method="get" action="mostrar.php">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+
+            <label for="gender">Género:</label>
+            <select id="gender" name="gender">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+
+            <label for="newsletter">Suscribirse al boletín:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <input type="submit" value="Enviar">
+        </form>
+		<img src="des.jpg">
+    </div>
+
+    <footer>
+        <p>Hugo Sánchez Gallardo 2DAW</p>
+		<span class="highlight">"Actuemos hoy para un planeta sostenible mañana"</span>
+    </footer>
+</body>
+</html>

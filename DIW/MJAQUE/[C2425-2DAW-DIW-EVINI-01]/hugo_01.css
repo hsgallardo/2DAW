@@ -1,0 +1,41 @@
+.dashboard{
+    background-color: tomato;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10vh 90vh;
+    /* grid-template-columns: 15vw 85vw; */
+    height: 100vh;
+}
+
+header{
+    background-color: lightblue;
+    grid-column: 1 / 3;
+    display: flex;
+}
+
+header>div{
+    flex-grow: 1;
+}
+
+header>button{
+    border: none;
+    margin: 0.2rem;
+}
+header>button:nth-of-type(1){
+    /*Logo*/
+    background-image: url('home.svg');
+    background-size: cover;
+    max-height: 15vh;
+}
+
+nav{
+    background-color: lightgray;
+}
+
+nav>ul{
+    list-style-type: none;
+}
+
+main{
+    background-color: green;
+}
