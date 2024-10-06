@@ -1,0 +1,51 @@
+html{
+	width:1260px;	
+}
+
+body{
+    height: 500px;
+    background-color:green;
+    margin-top:45px;
+}
+
+footer{
+    clear:both;
+    background-color:red;
+    height:100px;
+    width:1260px;   
+}
+
+main{
+    width: 1260px;
+    height: 400px;
+    background-color: gray;
+}
+
+
+div:nth-of-type(1){
+    float: left;
+    width: 780px; /*800px width de caja 1 - 10 y 10 del padding izquierdo y derecho > 800-20= 780px*/
+    height: 340px; /* 400px - 60px del padding top bottom*/
+    margin: 0 20px;
+    padding: 30px 10px;
+    background-color: blue;
+}
+
+div:nth-of-type(2){
+    float: left;
+    width: 370px; /* 400px - 30px del padding left */
+    height: 300px;
+    padding: 50px 0 50px 30px;
+    background-color: pink;
+}
+
+form{
+    margin-top: 200px;
+    margin-left: 180px;
+}
+
+
+img{
+    width: 150px;
+}
+
