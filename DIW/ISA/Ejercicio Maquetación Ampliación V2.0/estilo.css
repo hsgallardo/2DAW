@@ -1,0 +1,97 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 1260px;
+}
+
+body {
+    height: 500px;
+    margin-top: 45px;
+    background-color: green;
+    font-size: 15px;
+}
+
+/* Main */
+main {
+    width: 1260px;
+    background-color: gray;
+    display: flow-root; /* Contiene los elementos flotantes */
+}
+
+/* Caja Izquierda */
+#izquierda {
+    float: left;
+    width: 780px;
+    height: 340px;
+    margin: 0 20px;
+    padding: 30px 10px;
+    background-color: blue;
+}
+
+/* Estilos del formulario */
+form {
+    margin-top: 4em;
+    padding: 1em 0 1em 70px;
+    border: solid 1px black;
+}
+
+form input[type="text"] {
+    width: 490px;
+    padding-left: 10px;
+    display: block;
+    height: 2em;
+    margin: 1em 0;
+}
+
+form input[type="submit"] {
+    width: 150px;
+    height: 2em;
+}
+
+/* Caja Derecha */
+#derecha {
+    float: left;
+    width: 370px;
+    padding: 20px;
+    height: 340px;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Subcaja con position: relative */
+.relative {
+    background-color: #ff7f50;
+    position: relative;
+    top: 15px; /* Desplaza 15px hacia abajo */
+    left: 10px; /* Desplaza 10px hacia la derecha */
+    padding: 20px;
+    height: 100px;
+    /* La caja se mueve visualmente, pero conserva su espacio en el flujo del documento */
+}
+
+/* Subcaja con position: sticky */
+.sticky {
+    background-color: #20b2aa;
+    position: sticky;
+    top: 10px; /* Se queda "pegada" 10px del borde superior al hacer scroll */
+    padding: 20px;
+    height: 100px;
+    /* La caja se mantiene en su lugar hasta alcanzar el límite superior durante el scroll */
+}
+
+/* Footer */
+footer {
+    width: 1260px;
+    clear: both;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    padding-top: 30px;
+    color: white;
+}

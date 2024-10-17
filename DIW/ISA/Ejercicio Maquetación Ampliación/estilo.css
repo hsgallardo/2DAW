@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+	width:1260px;	/* 100% */
+}
+
+body{
+    height: 500px;
+    margin-top:45px;
+    background-color:green;
+	font-size:15px;
+}
+
+/* MAIN */
+
+main{
+    width: 1260px;
+    /* height: 400px; */
+    background-color: gray;
+    display: flow-root; /*  otra opción: overflow: hidden; */
+}
+
+
+/* Caja1 Izquierda */
+
+#izquierda{
+    float: left;
+    width: 780px; /*800px width de caja 1, - 10 y 10 del padding izquierdo y derecho > 800-20= 780px*/
+    height: 340px; /* 400px - 60px del padding top bottom*/
+    margin: 0 20px;
+    padding: 30px 10px;
+    background-color: blue;
+}
+
+/* Caja2 Derecha*/
+
+#derecha{
+    float: left;
+    width: 370px; /* 400px - 30px del padding left */
+    padding: 50px 0 50px 30px;
+    height: 300px;  
+    background-color: pink;
+}
+
+/* ------- ELEMENTOS DEL LAYOUT ------- */
+/* Elementos de la caja1 Izquierda */
+
+form{
+    margin-top: 4em;
+    padding: 1em 0 1em 70px;
+    border: solid 1px black;
+}
+
+form>div{
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 490px; /* 500 - 10px del padding left */
+    padding-left: 10px;
+    display: block;
+    height: 2em;
+    margin: 1em 0;
+}
+
+input[type="submit"]{
+    width: 150px;
+    height: 2em;
+}
+
+/* Elementos de la caja2 Derecha */
+
+img{
+    width: 150px;
+    height: auto;
+}
+
+/* FOOTER */
+
+footer{
+    width: 1260px;
+    clear: both;
+    height: 100px;
+    background-color: red;
+}
+
