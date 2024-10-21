@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+	width:1260px;	/* 100% */
+}
+
+body{
+    height: 91.743%; /* 545px = 100% , 500px = 91.743 */
+    margin-top:8,256%; /* 545px = 100% , 45px = 8.256 */
+    background-color:green;
+	font-size:15px;
+}
+
+/* MAIN */
+
+main{
+    width: 100%; /* 1260px = 100% */
+    background-color: gray;
+    display: flow-root; /*  otra opción: overflow: hidden; */
+}
+
+
+/* Caja1 Izquierda */
+
+#izquierda{
+    float: left;
+    width: 61.904%; /* 800px - 20px del padding left right*/ /* 1260px = 100% , 780px = 61.904% */
+    height: 62.385%; /* 340px - 60px del padding top bottom*/ /* 545px = 100% , 340px = 62.385% */
+    margin: 0 1.587%; /* 1260px = 100% , 20px = 1.587% */
+    padding: 5.504% 0.793%; /* 545px = 100% , 30px = 5.504%  :  1260px = 100% , 10px = 0.793% */
+    background-color: blue;
+}
+
+/* Caja2 Derecha*/
+
+#derecha{
+    float: left;
+    width: 29.365%; /* 400px - 30px del padding left */ /* 1260px = 100% , 370px = 29.365% */
+    padding: 9.174% 0 9.174% 2.380%; /* topBottom 545px = 100% , 50px = 9.174%  :  left 1260px = 100% , 30px = 2.380% */
+    height: 55.045%; /* 545px = 100% , 300px = 55.045% */ 
+    background-color: pink;
+}
+
+/* ------- ELEMENTOS DEL LAYOUT ------- */
+/* Elementos de la caja1 Izquierda */
+
+form{
+    margin-top: 4em;
+    padding: 1em 0 1em 5.555%; /* 1260px = 100% , 70px = 5.555% */
+    border: solid 1px black;
+}
+
+form>div{
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 38.888%; /* 500 - 10px del padding left */ /* 1260px = 100% , 490px = 38.888% */
+    padding-left: 0.793%; /* 1260px = 100% , 10px = 0.793% */
+    display: block;
+    height: 2em;
+    margin: 1em 0;
+}
+
+input[type="submit"]{
+    width: 11.904%; /* 1260px = 100% , 150px =  11.904% */
+    height: 2em;
+}
+
+/* Elementos de la caja2 Derecha */
+
+img{
+    width: 11.904%; /* 1260px = 100% , 150px =  11.904% */
+    height: auto;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%; /* 1260px = 100% */
+    clear: both;
+    height: 18.348%; /* 545px = 100% , 100px = 18.348 */
+    background-color: red;
+}
+
