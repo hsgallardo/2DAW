@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Position Relative y Sticky</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <!-- Caja Izquierda -->
+        <div id="izquierda">
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+					Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+					ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+            </p>
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre">
+                <br>
+                <label for="apellidos">Apellidos</label>
+                <input type="text" name="apellidos">
+                <br>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+		<div id="der">
+             <div id="roja">
+                ROJO
+            </div>
+            <div id="verde">
+                VERDE
+			</div>
+            <div id="azul">
+				AZUL
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        2022 - Ejercicio Básico de Maquetación
+    </footer>
+</body>
+</html>
+
+
+<!--EXPLICACION DE LA VERSION 2
+Enunciado. Haz un div padre con posicion relative y dentro 3 div con position absolute separados entre ellas con un top y un left y cada 1 de un color.
+Position relative - Padre
+El div #der tiene posicion relative con un top y un left lo que se posiciona sobre si mismo no desde el body.
+
+Position absolute - Hijos
+Dentro del relative tengo 3 divs con position absolute ahora ya no se posicionan segun el body se posicionan segun el padre cuando le damos top left e.t.c.-->

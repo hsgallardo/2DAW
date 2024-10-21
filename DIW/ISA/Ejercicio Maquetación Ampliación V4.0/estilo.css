@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 1260px;
+}
+
+body{
+    height: 500px;
+    margin-top: 45px;
+    font-size: 15px;
+}
+
+/* ------- MAIN ------- */
+
+main{
+    width: 1260px;
+    height: 1400px; /* Le damos tamaño para que haga scroll para el sticky*/
+    background-color: blueviolet;
+    /* overflow: hidden; */
+    display: flow-root;
+}
+
+/* ------- CAJAS ------- */
+
+#izquierda{ /* Caja izquierda */
+    float: left;
+    width: 780px; /* 800px - 20px del padding left right*/
+    height: 340px; /* 340px - 60px del padding top bottom*/
+    margin: 0 20px;
+    padding: 30px 10px;
+    background-color: skyblue;
+    position: relative; /* Posicionamiento relativo */
+    top: 20px; /* Se moverá 20px hacia abajo desde su posición normal */
+    z-index: 2; /* Se situa por encima de la caja de la derecha */
+}
+
+#derecha { /* Caja derecha */
+    float: left;
+    width: 370px; /* 400px - 30px del padding left */
+    height: 300px;
+    padding: 50px 0 50px 30px;
+    background-color: yellow;
+    position: sticky; /* Posicionamiento fijo */
+    top: 380px; /* Se mantendrá a 100px desde la parte superior del navegador */
+    right: 900px; /* Alineada 140px desde el borde derecho de la ventana */
+}
+
+/* ------- ELEMENTOS DEL LAYOUT ------- */
+/* Elementos de la caja izquierda */
+
+form{
+    margin-top: 4em;
+    padding: 1em 0 1em 70px;
+    border: solid 1px black;
+}
+
+form>div{
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 490px; /* 500 - 10px del padding left */
+    padding-left: 10px;
+    display: block;
+    height: 2em;
+    margin: 1em 0;
+}
+
+input[type="submit"]{
+    width: 150px;
+    height: 2em;
+    cursor: pointer;
+}
+
+/* Elementos de la caja derecha */
+
+img{
+    width: 150px;
+    height: auto;
+}
+
+/* FOOTER */
+
+footer{
+    width: 1260px;
+    clear: both;
+    height: 100px;
+    background-color: red;
+}

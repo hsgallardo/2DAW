@@ -1,0 +1,95 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 1260px;
+}
+
+body {
+    height: 500px;
+    margin-top: 45px;
+    background-color: green;
+    font-size: 15px;
+}
+
+/* Main */
+main {
+    width: 1260px; /* height: 1300px; */
+    background-color: gray;
+    display: flow-root; /* Contiene los elementos flotantes */
+	/* overflow: hidden; */
+}
+
+/* Caja Izquierda */
+#izquierda {
+    float: left;
+    width: 780px; /* 800px - 20px del padding left right*/
+    height: 340px; /* 340px - 60px del padding top bottom*/
+    margin: 0 20px;
+    padding: 30px 10px;
+    background-color: blue;
+}
+
+#derecha {
+    float: left;
+    width: 370px;
+    padding: 50px 0 50px 30px;
+    height: 1300px; /* Le añadimos altura para poder hacer el scroll */
+    background-color: pink;
+}
+
+/* Estilos del formulario */
+form {
+    margin-top: 4em;
+    padding: 1em 0 1em 70px;
+    border: solid 1px black;
+}
+
+form>div{
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 490px; /* 500 - 10px del padding left */
+    padding-left: 10px;
+    display: block;
+    height: 2em;
+    margin: 1em 0;
+}
+
+
+
+input[type="submit"]{
+    width: 150px;
+    height: 2em;
+    cursor: pointer;
+}
+
+/* Caja Derecha */
+
+
+#uno {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+}
+
+#dos {
+    background-color: orange;
+    width: 200px;
+    height: 200px;
+    margin-top: 30px;
+    position: sticky; /* Para que se quede fijo */
+    top: 0; /* Para que cuando llegue a la parte de arriba del div #der pare */
+}
+
+/* Footer */
+footer {
+    width: 1260px;
+    clear: both;
+    height: 100px;
+    background-color: red;
+}

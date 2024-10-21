@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    width: 1260px;
+}
+
+body{
+    height: 500px;
+    margin-top: 45px;
+    font-size: 15px;
+}
+
+/* ------- MAIN ------- */
+
+main{
+    width: 1260px;
+    /* height: 400px; */
+    background-color: blueviolet;
+    /* overflow: hidden; */
+    display: flow-root;
+}
+
+/* ------- CAJAS ------- */
+
+#izquierda{ /* Caja izquierda */
+    float: left;
+    width: 780px; /* 800px - 20px del padding left right*/
+    height: 340px; /* 340px - 60px del padding top bottom*/
+    margin: 0 20px;
+    padding: 30px 10px;
+    background-color: skyblue;
+}
+
+#derecha{ /* Caja derecha */
+    float: left;
+    width: 370px; /* 400px - 30px del padding left */
+    height: 300px;
+    padding: 50px 0 50px 30px;
+    background-color: yellow;
+    position: relative;
+    top: 50px; /* Se separa de arriba sobre si mismo ya que es position relative*/
+    left: 50px; /* Se separa de la izq sobre si mismo ya que es position relative*/
+}
+
+#der>div{
+    position: absolute; /* Ponemos los divs position absolute para comprobar que se posicionan segun su padre al ser relative */
+}
+
+#roja{
+    background-color: rgb(255, 0, 0,0.7);
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: 20px;
+}
+
+
+
+#verde{
+    background-color: rgba(35, 255, 1, 0.7);
+    width: 150px;
+    height: 150px;
+    top: 80px;
+    left: 80px;
+}
+
+#azul{
+    background-color: rgba(0, 8, 255, 0.7);
+    width: 150px;
+    height: 150px;
+    top: 140px;
+    left: 140px;
+}
+
+/* ------- ELEMENTOS DEL LAYOUT ------- */
+/* Elementos de la caja izquierda */
+
+form{
+    margin-top: 4em;
+    padding: 1em 0 1em 70px;
+    border: solid 1px black;
+}
+
+form>div{
+    text-align: center;
+}
+
+input[type="text"]{
+    width: 490px; /* 500 - 10px del padding left */
+    padding-left: 10px;
+    display: block;
+    height: 2em;
+    margin: 1em 0;
+}
+
+input[type="submit"]{
+    width: 150px;
+    height: 2em;
+    cursor: pointer;
+}
+
+/* Elementos de la caja derecha */
+
+img{
+    width: 150px;
+    height: auto;
+}
+
+/* FOOTER */
+
+footer{
+    width: 1260px;
+    clear: both;
+    height: 100px;
+    background-color: red;
+}
