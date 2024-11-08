@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nombre del Autor | email@example.com">
+    <link rel="icon" type="image/x-icon" href="assets/img/evg.jpg">
+    <title>Mi Diario de Aprendizaje</title>
+    <!-- Hojas de estilo CSS -->
+   
+	<link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/logo.jpg" alt="Logo del Diario">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="unidad1.html">Tema 1</a></li>
+				<li><a href="unidad2.html">Tema 2</a></li>
+				<li><a href="unidad3.html">Tema 3</a></li>
+				<li><a href="unidad4.html">Tema 4</a></li>
+				<li><a href="unidad5.html">Tema 5</a></li>				
+            </ul>
+        </nav>
+        <a href="perfil.html" class="btn"><button>DEAP</button></a>
+    </header>
+	<style>
+        ul {
+            font-size: 0.9em; /* Ajusta el tamaño de las viñetas, 0.9em es un poco más pequeño que el tamaño normal */
+            line-height: 1.4em; /* Da un poco de espacio entre las líneas para mejor legibilidad */
+        }
+        li {
+            margin-bottom: 8px; /* Espacio entre cada viñeta para que no se vean muy pegadas */
+        }
+    </style>
+    <main>
+        <section class="intro">
+            <div class="intro-content">
+                <figure>
+                    <img src="assets/img/servicio.jpg" alt="Imagen de introducción">
+                   
+                </figure>
+                <div>
+                    <p>Diario de Aprendizaje<span class="highlight"> Hugo Sánchez Gallardo</span>, esto nos va a servir para asimilar conceptos y en caso de dudas o tener problemas esto nos facilite el trabajo.<br>
+					En el <span class="highlight">SEGUNDO</span> tema trataremos los <span class="highlight">servicios WEB</span>, explicaremos un poco de qué trata, algunas funciones y como sería su utilización.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="temario1" class="temario">
+            <h1>Tema 2 Servicios WEB</h1>
+            <article>
+                <details>
+                    <summary>Protocolo http/https</summary>
+                    <p>
+						Nos consta de dos partes: El Cliente Web y el Servidor Web:<br>
+						<img src="assets/img/cs.jpg" alt="Cliente y Servicio Web"><br>
+						<h2>El Cliente:</h2><br>
+							<ul>
+								<li>-Solicita e interpreta el contenido.</li>
+								<li>-Renderiza en la pantalla el resultado.</li>
+								<li>-Interactúa con el usuario.</li><br>
+							</ul>
+						<h2>El Servidor:</h2><br>
+							<ul>
+								<li>-Sirve contendio estático.</li>
+								<li>-Ejecuta programas para generar contenido dinámico (PHP).</li>
+								<li>-Autentica usuarios.</li>
+								<li>-Certificados SSL/TLS.</li>
+								<li>-Mediante extensiones genera contenido dinámico (JavaScrip, Ajax).</li><br><br>
+							</ul>												
+					</p>
+                </details>
+                <details>
+                    <summary>El navegador - Cliente Web</summary> <br>                  
+					<p>
+						<b>-Utilizando el protocolo HTTP</b> descarga los documentos en los diferentes
+						formatos de la web (HTML, CSS, Javascript) así como los recursos asociados<br><br>
+						
+						<b>-Puede negociar</b> algunas características particulares. Por ejemplo, si se
+						soporta compresión o no.<br><br>
+						
+						<b>-Interpreta la información </b>en los documentos y <b>renderiza</b> el documento.<br><br>
+						
+						-Permite recoger información del usuario y enviarla al servidor como parámetros
+						en una petición web <b>GET</b> o <b>POST.<br><br>
+						
+						<b>-Gestiona las cookies</b> que han sido enviadas por los servidores.<br>
+						<center>
+							<img src="assets/img/navegadores.jpg" alt="Navegadores">
+						</center>						
+					</p>              
+				</details>
+				
+                <details>
+                    <summary>El Servidor Web</summary>
+                    <p>
+						<ul>
+							<li>El servidor web, soporta el protocolo HTTP / HTTPS.</li>
+						
+						Atiende a las peticiones del cliente.
+						Autenticación de Usuarios.
+						SSL/ TLS
+						De forma nativa, o mediante módulos, permite ejecutar aplicaciones de diferentes formas
+						CGI : Common Gateway Interface
+						PHP
+						Python
+						Java
+
+						Puede haber módulos que permitan de forma transparente alterar el contenido
+						para optimizarlo o con otros fines.
+						HTML, Javascript, AJAX						
+					</P>
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</P>
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</P>													
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</P>													
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO						
+					</P>													
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO			
+					</P>													
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</P>													
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</P>													
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</p>																							
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</p>																							
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</p>																							
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</p>																							
+                </details>
+				<details>
+                    <summary>TITULO</summary>
+                    <p>
+						TEXTO
+					</p>																							
+                </details>
+				
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Hugo Sánchez Gallardo 2DAW</p>
+    </footer>
+
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
