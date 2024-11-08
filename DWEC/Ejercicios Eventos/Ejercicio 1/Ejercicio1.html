@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento con onLoad</title>
+</head>
+<body>
+	<p>
+		Evento onLoad
+	</p>
+    <script>
+        // Función que se ejecuta al cargar la página
+        function mostrarAlerta() {
+            alert('Página con onLoad.');
+        }
+
+        // Asociamos la función al evento onLoad de la ventana
+        window.onload = mostrarAlerta;
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos con onMouseOver y onMouseOut</title>
+    <style>
+        
+        .color {
+            margin: 10px;
+            cursor: pointer;    
+			margin:20px;			
+        }
+    </style>
+</head>
+<body>
+
+    <div class="color" onMouseOver="cambiarColor('red')" onMouseOut="restablecerColor()">Rojo</div>
+    <div class="color" onMouseOver="cambiarColor('green')" onMouseOut="restablecerColor()">Verde</div>
+    <div class="color" onMouseOver="cambiarColor('blue')" onMouseOut="restablecerColor()">Azul</div>
+
+    <script>
+		//Coge el color de cada uno de cuál se ponga encima
+        function cambiarColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+		//Restablece el color del fondo a blanco
+        function restablecerColor() {
+            document.body.style.backgroundColor = 'white';
+        }
+    </script>
+
+</body>
+</html>

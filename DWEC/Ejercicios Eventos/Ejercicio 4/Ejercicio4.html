@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos con onMouseOver y onMouseOut(+href)</title>
+    <style>
+        .color {
+            
+            font-size: 25px;
+			color: black;
+			cursos: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="https://mail.google.com" class="color" onMouseOver="cambiarFondo('red')" onMouseOut="restablecerColor">Gmail</a> | 
+    <a href="https://outlook.live.com" class="color" onMouseOver="cambiarFondo('green')" onMouseOut="restablecerColor">Hotmail</a> | 
+    <a href="https://mail.yahoo.com" class="color" onMouseOver="cambiarFondo('blue')" onMouseOut="restablecerColor">Yahoo</a>
+
+    
+    <script>
+        //Coge el color de cada uno de cuál se ponga encima
+        function cambiarFondo(color) {
+            document.body.style.backgroundColor = color;
+        }
+
+        //Restablece el color del fondo a blanco
+        function restablecerFondo() {
+            document.body.style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+</html>
