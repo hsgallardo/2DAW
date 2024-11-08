@@ -1,0 +1,140 @@
+/* Estilos generales que aplican en pantallas grandes */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 1260px; /* 100% */
+}
+
+body {
+    height: 91.743%; /* 545px = 100% , 500px = 91.743 */
+    margin-top: 8.256%; /* 545px = 100% , 45px = 8.256 */
+    background-color: green;
+    font-size: 15px;
+}
+
+nav{
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    min-height: 50px;
+}
+
+nav>div{
+    display: inline-block;
+    margin-left: 10%;
+}
+
+@media(max-width: 800px){
+    nav>div{
+        display: block;
+        text-align: center;
+        margin: 0;
+        border-bottom: solid 1px blue;
+
+    }
+}
+
+main {
+    width: 100%;
+    background-color: gray;
+    display: flow-root;
+}
+
+#izquierda {
+    float: left;
+    width: 61.904%;
+    height: 62.385%;
+    margin: 0 1.587%;
+    padding: 5.504% 0.793%;
+    background-color: blue;
+}
+
+#derecha {
+    float: left;
+    width: 29.365%;
+    padding: 9.174% 0 9.174% 2.380%;
+    height: 55.045%;
+    background-color: pink;
+}
+
+form {
+    margin-top: 4em;
+    padding: 1em 0 1em 5.555%;
+    border: solid 1px black;
+}
+
+form > div {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 38.888%;
+    padding-left: 0.793%;
+    display: block;
+    height: 2em;
+    margin: 1em 0;
+}
+
+input[type="submit"] {
+    width: 11.904%;
+    height: 2em;
+}
+
+img {
+    width: 11.904%;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    clear: both;
+    height: 18.348%;
+    background-color: red;
+}
+
+/* Media Query para pantallas de móviles (ancho máximo de 768px) */
+@media (max-width: 768px) {
+    html {
+        width: 100%; /* Permitir que el ancho se ajuste al dispositivo móvil */
+    }
+
+    body {
+        margin-top: 0;
+        height: auto;
+    }
+
+    #izquierda,
+    #derecha {
+        float: none; /* Elimina el float para que los elementos se apilen */
+        width: 100%; /* Ambos divs ocupan todo el ancho de la pantalla */
+        height: auto; /* Permitir que la altura se ajuste al contenido */
+        margin: 0; /* Eliminar márgenes laterales */
+        padding: 5%;
+    }
+
+    form {
+        padding: 1em;
+    }
+
+    input[type="text"] {
+        width: 100%; /* Ajustar el ancho del input al 100% del contenedor */
+        padding-left: 2%;
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Botón de envío también al 100% */
+    }
+
+    img {
+        width: 100%; /* Imagen al 100% del ancho del contenedor */
+    }
+
+    footer {
+        height: auto;
+        padding: 1em 0;
+        text-align: center; /* Centrar el texto en el footer */
+    }
+}
