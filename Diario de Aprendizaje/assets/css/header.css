@@ -1,0 +1,93 @@
+/* Javier Arias Carroza */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+}
+
+body {
+    background-image: linear-gradient(180deg, rgba(230, 230, 230, 1) 0%, rgba(200, 200, 200, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--texto);
+}
+
+header {
+    display: flex;
+    background-color: var(--principal); /* Fondo en naranja oscuro */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    border-bottom: 3px solid var(--titulo); /* Línea en verde oscuro */
+}
+
+header > .logo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header > .logo > img {
+    height: 50px;
+    width: auto;
+    transition: transform 0.3s;
+}
+
+header > .logo > img:hover {
+    transform: scale(1.1); /* Efecto hover en el logo */
+}
+
+header > nav > .nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+header > nav > .nav-links > li {
+    list-style: none;
+}
+
+header > nav > .nav-links > li > a {
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header > nav > .nav-links > li > a:hover {
+    color: #ffccbc; /* Color naranja claro en hover */
+}
+
+header > .fotoPerfil > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+header > .fotoPerfil > img:hover {
+    transform: scale(1.1); /* Efecto hover en la imagen de perfil */
+}
+
+header > .btn > button {
+    font-weight: 700;
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: var(--titulo); /* Fondo verde oscuro */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header > .btn > button:hover {
+    background-color: #004d40; /* Verde más oscuro en hover */
+    transform: scale(1.05);
+}
