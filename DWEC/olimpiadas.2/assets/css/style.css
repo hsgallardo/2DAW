@@ -1,0 +1,174 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    color: #4f5d73;
+}
+
+/* Encabezados */
+h1, h2 {
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 40px 0;
+    color: #2f3b52;
+}
+
+h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    color: #1a202c;
+}
+
+/* Estilo para el formulario (DAR DE ALTA) */
+form {
+    width: 90%;
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+form:hover {
+    transform: translateY(-10px);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #5a6d8c;
+}
+
+input, select, button {
+    width: 95%;
+    padding: 16px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1.1em;
+    background-color: #f5f7fa;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+/* Input and Select styles */
+input:focus, select:focus {
+    border-color: #5c6bc0;
+    box-shadow: 0 0 8px rgba(92, 103, 228, 0.3);
+}
+
+/* Estilo para el botón */
+button {
+    background-color: #5c6bc0;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: #3f51b5;
+    transform: translateY(-2px);
+}
+
+/* Estilos para la navegación */
+nav {
+    background-color: #5c6bc0;
+    padding: 18px 0;
+    border-bottom: 2px solid #e1e8f0;
+}
+
+nav h2 {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 12px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #3f51b5;
+    transform: translateY(-2px);
+}
+
+/* Estilos para las listas de inscripciones (Ver Inscripciones) */
+ul {
+    padding-left: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+    font-size: 1.2em;
+    color: #4f5d73;
+    margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: #f5f7fa;
+    transition: background-color 0.3s ease;
+}
+
+ul li:nth-child(odd) {
+    background-color: #e3eaf4;
+}
+
+ul li:nth-child(even) {
+    background-color: #eaf1fb;
+}
+
+ul li:hover {
+    background-color: #d1e2f3;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #5c6bc0;
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 60px;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
