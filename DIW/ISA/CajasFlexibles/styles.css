@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #444;
+    padding: 10px;
+    color: white;
+}
+
+#logo {
+    width: 100px;
+    border:1px solid red;
+}
+
+nav {
+    border:1px solid red;
+    background-color: #222;
+    width: 1000%;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0px 10px 0px 10px;
+}
+
+nav ul li {
+    flex-grow: 1;  /* Los botones crecen proporcionalmente */
+    flex-shrink: 1;  /* Se reducen cuando no caben en la caja */
+    flex-basis: 150px;  
+    text-align: center;
+    background-color: #999;
+    margin: 0px 10px 0px 10px;
+    border:1px solid red;
+}
+
+nav ul li a{
+    margin: 0 20px 0 20px;
+    text-decoration: none;
+    color:black;
+}
+
+
+
+
+
