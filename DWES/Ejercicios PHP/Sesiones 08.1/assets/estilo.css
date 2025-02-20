@@ -1,0 +1,262 @@
+/* Estilos globales para el cuerpo y las fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alineación superior para evitar que el contenido quede muy bajo */
+    height: 100vh;
+    padding-top: 60px; /* Evita que el contenido se quede tapado por el header */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px; /* Espacio arriba */
+    padding-bottom: 20px;
+}
+
+/* Estilos para el header y navegación */
+header {
+    background-color: #1f1f1f;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Estilos para el nav */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4f46e5;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #4338ca;
+}
+
+/* Título principal */
+h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Párrafo debajo del título */
+p {
+    font-size: 18px;
+    color: #bdbdbd;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para el contenedor del formulario */
+form {
+    background: #1f1f1f; /* Fondo oscuro */
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid #444444;
+}
+
+/* Estilos para las etiquetas y campos de entrada */
+label {
+    font-size: 16px;
+    color: #bdbdbd; /* Color gris para el texto de las etiquetas */
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Estilo para los inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #555555; /* Borde gris más oscuro */
+    border-radius: 8px;
+    background: #333333; /* Fondo oscuro para los inputs */
+    color: white;
+    font-size: 16px;
+}
+
+/* Placeholder de los inputs */
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* Placeholder más tenue */
+}
+
+/* Asegura que los inputs y botones tengan un espaciado adecuado */
+input, button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los botones */
+button {
+    background: #4f46e5;
+    border: none;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+/* Efecto hover en los botones */
+button:hover {
+    background: #4338ca;
+    transform: scale(1.05);
+}
+
+/* Estilo para los mensajes de error o éxito */
+.message {
+    font-size: 16px;
+    color: #ff4c4c;
+    margin-top: 20px;
+}
+
+.message.success {
+    color: #4CAF50; /* Verde */
+}
+
+/* Estilo de los enlaces de inicio */
+.inicio-link {
+    text-decoration: none;
+    color: #4f46e5;
+    font-size: 18px;
+    margin-bottom: 20px; /* Espacio entre el enlace y el formulario */
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Si se desea que el mensaje de error sea más prominente */
+.message.error {
+    background-color: #ffdddd; /* Fondo rojo claro */
+    color: #ff0000; /* Texto rojo */
+}
+
+.inicio-link:hover {
+    color: #4338ca;
+}
+
+/* Estilo de los enlaces de navegación */
+ul li a {
+    text-decoration: none;
+    color: #4f46e5;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #4338ca;
+}
+
+/* Contenedor para los mensajes de error o éxito debajo del formulario */
+.message {
+    font-size: 16px;
+    color: #ff4c4c; /* Rojo para el error */
+    margin-top: 20px;
+    text-align: center; /* Centrado del mensaje */
+    padding: 10px;
+    background-color: #333; /* Fondo oscuro */
+    border-radius: 8px;
+}
+.message.success {
+    color: #4CAF50; /* Verde */
+}
+
+/* Espaciado entre los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para los enlaces dentro de una lista */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #4f46e5;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #4338ca;
+}
+
+/* Para las vistas de inicio y cambiar contraseña */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px; /* Evita que se sobrepongan con el header */
+    padding: 20px;
+}
+
+/* Enlaces de navegación (en la parte superior) */
+ul.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    background: #1f1f1f;
+    border-bottom: 2px solid #444444;
+}
+
+ul.nav-links li {
+    padding: 10px;
+    font-weight: bold;
+}
+
+ul.nav-links li a {
+    text-decoration: none;
+    color: #4f46e5;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+ul.nav-links li a:hover {
+    color: #4338ca;
+}

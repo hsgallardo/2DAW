@@ -1,0 +1,102 @@
+/* Reset básico para asegurar consistencia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #6e7bff, #2a3dff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* Estilos para los grupos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    position: relative;
+}
+
+.input-group label {
+    font-size: 16px;
+    color: #e0e0e0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #3b7dd8;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.input-group input::placeholder {
+    color: #ddd;
+    opacity: 0.7;
+}
+
+/* Botón de envío */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #3b7dd8;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #316ac5;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #285fa0;
+    transform: translateY(1px);
+}
+
+/* Mensaje de error o éxito */
+.mensaje {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ff4d4d;
+    font-weight: 600;
+}
