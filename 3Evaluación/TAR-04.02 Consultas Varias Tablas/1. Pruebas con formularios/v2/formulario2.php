@@ -1,3 +1,4 @@
+--Version 2 Array Dinámico con los id y los nombres de 3 etapas  con Checkbox.
 <?php
 $array = [
     ['id' => 1, 'nombre' => 'ESO'],
