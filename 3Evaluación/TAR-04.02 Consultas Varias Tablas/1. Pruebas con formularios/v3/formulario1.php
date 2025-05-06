@@ -1,3 +1,4 @@
+--Version 3 Array Dinámico con Radio, con 3 etapas y actividad
 <?php
 $array = ['ESO', 'BACHILLERATO', 'CF'];
 ?>
