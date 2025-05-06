@@ -1,4 +1,4 @@
---Version 1 Array Dinámico Checkbox, con 3 etapas y actividad
+--Version 1 Array Dinámico con Checkbox, con 3 etapas y actividad
 <?php
 $array = ['ESO', 'BACHILLERATO', 'CF'];
 ?>
